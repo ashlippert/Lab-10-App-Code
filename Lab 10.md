@@ -88,12 +88,18 @@ Throughout the lab, we worked with two datasets: one containing metadata on wate
 ## Test Results:
 
 
-**Code from AI Assistant For Part 1**
+**AI Assistance For Part 1**
 
 | Goal   | Provide AI with directions for Part 1 of Lab |
-|--------|----------------------------------------------|
 | Model  | ChatGPT GPT-4-turbo                          |
 | Prompt | In this section, you will use the pandas Python library to access a.csv file downloaded from USGS. 1. Understand the station database downloaded from USGS. a. Download the file named station.csv from the Canvas assignment. b. Open the file using Excel or Google Sheets to examine its contents. c. Take note of the headers and the types of information available in the database. d. If you are using a cloud service, you must upload the files to the cloud environment. 2. Use your preferred LLM AI to generate a Python function that accesses the database, filters for the names of water quality measurement sites, and displays the location information for all sites without repetition. 3. Use your preferred LLM AI to create a map that pinpoints the location of every station in the database |
+
+**AI Assistance For Part 2**
+
+| Goal   | Provide AI with directions for Part 2 of the Lab |
+| Model  | ChatGPT GPT-4-Turbo                              |
+| Prompt | Part 2 – What’s normal
+In this section, you will access a different database containing information on the results of various water quality tests. The goal is to work with a large dataset and extract specific, relevant information. 1. Understand the results database downloaded from USGS. a. Download the file named narrowresult.csv from the Canvas assignment. b. Open the file using Excel or Google Sheets to examine its contents. c. Take note of the headers and the types of information available in the database. d. If you are using a cloud service, upload the file to your cloud environment. 2. Use your preferred LLM AI to generate a Python function that accesses the database, filters for a desired water quality characteristic, and plots the results. Each site should be represented as a separate line with a different color, where the Y-axis represents the measured values and the X-axis represents time. 3. Ask the LLM AI to modify the code such that you can ask for two characteristics at the same time. |
 
 ## Discussion:
 

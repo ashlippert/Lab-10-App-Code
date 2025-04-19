@@ -124,6 +124,20 @@ Throughout the lab, we worked with two datasets: one containing metadata on wate
 | Model  | ChatGPT GPT-4-Turbo                  |
 | Prompt | Read my code and help me fix this bug: @ashlippert ➜ /workspaces/Lab-10-App-Code (main) $ /usr/local/bin/python /workspaces/Lab-10-App-Code/streamlit_app.py Traceback (most recent call last): File "/workspaces/Lab-10-App-Code/streamlit_app.py", line 3, in <module> import matplotlib.pyplot as plt ModuleNotFoundError: No module named 'matplotlib' @ashlippert ➜ /workspaces/Lab-10-App-Code (main) $ |
 
+| Goal   | Debug code for streamlit application |
+|--------|--------------------------------------|
+| Model  | ChatGPT GPT-4-Turbo                  |
+| Prompt | Help me fix: @ashlippert ➜ /workspaces/Lab-10-App-Code (main) $ /usr/local/bin/python /workspaces/Lab-10-App-Code/streamlit_app.py Traceback (most recent call last): File "/workspaces/Lab-10-App-Code/streamlit_app.py", line 4, in <module> import folium ModuleNotFoundError: No module named 'folium' |
+
+| Goal   | Debug code for streamlit application |
+|--------|--------------------------------------|
+| Model  | ChatGPT GPT-4-Turbo                  |
+| Prompt | The app loaded up, but when I attempted to plot I received this error: TypeError: 'value' must be an instance of str or bytes, not a float
+Traceback: File "/workspaces/Lab-10-App-Code/streamlit_app.py", line 75, in <module> plot_characteristics(char1, char2)
+File "/workspaces/Lab-10-App-Code/streamlit_app.py", line 61, in plot_characteristics plt.plot(site_data["ActivityStartDate"], site_data["ResultMeasureValue"], label=f"{site_id} - {char}") File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/pyplot.py", line 3827, in plot return gca().plot(^^^^^^^^^^^File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 1777, in plot lines = [*self._get_lines(self, *args, data=data, **kwargs)]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 297, in __call__yield from self._plot_args(^^^^^^^^^^^^^^^^ File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 491, in _plot_args axes.yaxis.update_units(y)
+File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/axis.py", line 1754, in update_units default = self._converter.default_units(data, self)^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/category.py", line 108, in default_units axis.units.update(data)
+File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/category.py", line 217, in update_api.check_isinstance((str, bytes), value=val)
+File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/_api/__init__.py", line 92, in check_isinstance raise TypeError( |
 
 ## Discussion:
 

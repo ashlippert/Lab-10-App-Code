@@ -112,10 +112,18 @@ Throughout the lab, we worked with two datasets: one containing metadata on wate
 | Model  | ChatGPT GPT-4-Turbo                                                 |
 | Prompt | OrganizationIdentifier	OrganizationFormalName	ActivityIdentifier	ActivityStartDate	ActivityStartTime/Time	ActivityStartTime/TimeZoneCode	MonitoringLocationIdentifier	ResultIdentifier	DataLoggerLine	ResultDetectionConditionText	MethodSpecificationName	CharacteristicName	ResultSampleFractionText	ResultMeasureValue	ResultMeasure/MeasureUnitCode	MeasureQualifierCode	ResultStatusIdentifier	StatisticalBaseCode	ResultValueTypeName	ResultWeightBasisText	ResultTimeBasisText	ResultTemperatureBasisText	ResultParticleSizeBasisText	PrecisionValue	DataQuality/BiasValue	ConfidenceIntervalValue	UpperConfidenceLimitValue	LowerConfidenceLimitValue	ResultCommentText	USGSPCode	ResultDepthHeightMeasure/MeasureValue	ResultDepthHeightMeasure/MeasureUnitCode	ResultDepthAltitudeReferencePointText	ResultSamplingPointName	BiologicalIntentName	BiologicalIndividualIdentifier	SubjectTaxonomicName	UnidentifiedSpeciesIdentifier	SampleTissueAnatomyName	GroupSummaryCountWeight/MeasureValue	GroupSummaryCountWeight/MeasureUnitCode	CellFormName	CellShapeName	HabitName	VoltismName	TaxonomicPollutionTolerance	TaxonomicPollutionToleranceScaleText	TrophicLevelName	FunctionalFeedingGroupName	TaxonomicDetailsCitation/ResourceTitleName	TaxonomicDetailsCitation/ResourceCreatorName	TaxonomicDetailsCitation/ResourceSubjectText	TaxonomicDetailsCitation/ResourcePublisherName	TaxonomicDetailsCitation/ResourceDate	TaxonomicDetailsCitation/ResourceIdentifier	FrequencyClassInformationUrl	ResultAnalyticalMethod/MethodIdentifier	ResultAnalyticalMethod/MethodIdentifierContext	ResultAnalyticalMethod/MethodName	ResultAnalyticalMethod/MethodUrl	ResultAnalyticalMethod/MethodQualifierTypeName	MethodDescriptionText	LaboratoryName	AnalysisStartDate	AnalysisStartTime/Time	AnalysisStartTime/TimeZoneCode	AnalysisEndDate	AnalysisEndTime/Time	AnalysisEndTime/TimeZoneCode	ResultLaboratoryCommentCode	ResultLaboratoryCommentText	ResultDetectionQuantitationLimitUrl	LaboratoryAccreditationIndicator	LaboratoryAccreditationAuthorityName	TaxonomistAccreditationIndicator	TaxonomistAccreditationAuthorityName	LabSamplePreparationUrl	ProviderName |
 
+**AI Assistance for Part 3**
+
 | Goal   | Allow ChatGPT to analysze the structure of the narrowresults file. |
 |--------|--------------------------------------------------------------------|
 | Model  | ChatGPT GPT-4-Turbo                                                |
 | Prompt | Now, lets combine that with our other function from earlier and follow the lab steps: 3. Edit your app to add the functionalities required. a. Click the edit button (pencil icon) and wait for the GitHub Codespaces environment to be created. b. Ask your preferred LLM AI to help you generate the app for streamlit and copy and paste the result under the streamlit_app.py file. You will be able to run the app as soon as it is saved |
+
+| Goal   | Debug code for streamlit application |
+|--------|--------------------------------------|
+| Model  | ChatGPT GPT-4-Turbo                  |
+| Prompt | Read my code and help me fix this bug: @ashlippert ➜ /workspaces/Lab-10-App-Code (main) $ /usr/local/bin/python /workspaces/Lab-10-App-Code/streamlit_app.py Traceback (most recent call last): File "/workspaces/Lab-10-App-Code/streamlit_app.py", line 3, in <module> import matplotlib.pyplot as plt ModuleNotFoundError: No module named 'matplotlib' @ashlippert ➜ /workspaces/Lab-10-App-Code (main) $ |
+
 
 ## Discussion:
 

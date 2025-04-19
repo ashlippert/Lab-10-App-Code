@@ -93,18 +93,7 @@ Throughout the lab, we worked with two datasets: one containing metadata on wate
 | Goal   | Provide AI with directions for Part 1 of Lab |
 |--------|----------------------------------------------|
 | Model  | ChatGPT GPT-4-turbo                          |
-|--------|----------------------------------------------|
-| Prompt | In this section, you will use the pandas Python library to access a.csv file downloaded from USGS.
-1. Understand the station database downloaded from USGS.
-a. Download the file named station.csv from the Canvas assignment.
-b. Open the file using Excel or Google Sheets to examine its contents.
-c. Take note of the headers and the types of information available in the database.
-d. If you are using a cloud service, you must upload the files to the cloud environment.
-2. Use your preferred LLM AI to generate a Python function that accesses the database, filters
-for the names of water quality measurement sites, and displays the location information for
-all sites without repetition.
-3. Use your preferred LLM AI to create a map that pinpoints the location of every station in the
-database |
+| Prompt | In this section, you will use the pandas Python library to access a.csv file downloaded from USGS. 1. Understand the station database downloaded from USGS. a. Download the file named station.csv from the Canvas assignment. b. Open the file using Excel or Google Sheets to examine its contents. c. Take note of the headers and the types of information available in the database. d. If you are using a cloud service, you must upload the files to the cloud environment. 2. Use your preferred LLM AI to generate a Python function that accesses the database, filters for the names of water quality measurement sites, and displays the location information for all sites without repetition. 3. Use your preferred LLM AI to create a map that pinpoints the location of every station in the database |
 
 ## Discussion:
 

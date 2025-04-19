@@ -91,16 +91,6 @@ code used for this portion of the lab is provided below.
 **Part 1: Map It**
    
    Testing for this section began by confirming that station.csv was readable and correctly parsed. The filtering function was run to ensure all monitoring sites were uniquely listed and that no locations were duplicated. The map output was inspected to check that every station appeared in a valid location with appropriate spacing and no missing coordinates. If errors such as NaNs or repeated names appeared, the script was adjusted and re-tested. Function outputs were validated against the raw CSV file opened in Excel or Google Sheets.
-   
-<br/>
-<div align="center">
-  <img src="" alt="" width="400">
-      <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 4: . </figcaption>
-</div>
-
-<br/>
-
 
 **Part 2: What's Normal**
 
@@ -184,6 +174,13 @@ https://redesigned-potato-g4r6prvjwqrv3pprw-8501.app.github.dev/
 | Prompt | The app loaded up, but when I attempted to plot I received this error: TypeError: 'value' must be an instance of str or bytes, not a float Traceback: File "/workspaces/Lab-10-App-Code/streamlit_app.py", line 75, in <module> plot_characteristics(char1, char2) File "/workspaces/Lab-10-App-Code/streamlit_app.py", line 61, in plot_characteristics plt.plot(site_data["ActivityStartDate"], site_data["ResultMeasureValue"], label=f"{site_id} - {char}") File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/pyplot.py", line 3827, in plot return gca().plot(^^^^^^^^^^^File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 1777, in plot lines = [*self._get_lines(self, *args, data=data, **kwargs)]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 297, in __call__yield from self._plot_args(^^^^^^^^^^^^^^^^ File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 491, in _plot_args axes.yaxis.update_units(y) File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/axis.py", line 1754, in update_units default = self._converter.default_units(data, self)^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^File"/home/vscode/.local/lib/python3.11/site-packages/matplotlib/category.py", line 108, in default_units axis.units.update(data) File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/category.py", line 217, in update_api.check_isinstance((str, bytes), value=val) File "/home/vscode/.local/lib/python3.11/site-packages/matplotlib/_api/__init__.py", line 92, in check_isinstance raise TypeError( |
 
 ## Discussion:
+This lab demonstrated how AI-generated Python code can be applied to real-world environmental datasets for analysis and visualization. Using USGS water quality data, the lab explored the capabilities of tools like pandas and Streamlit to filter, map, and plot water quality trends by location and contaminant. While the AI-generated code provided a solid foundation, some corrections were needed, such as renaming undefined variables and ensuring consistency with the actual dataset structure.
 
+One challenge was aligning the AI's assumptions with the dataset being used. For example, the variable df had to be changed to usgs_data, and column names had to be verified before plotting. Despite these small issues, the process highlighted how AI can accelerate the development of data-driven applications when paired with human judgment and debugging skills.
+
+The use of Streamlit made it easy to turn the analysis into an interactive web app, allowing users to select monitoring stations and contaminants and instantly view time-series plots. This approach has real potential in public-facing tools that communicate environmental data in an accessible way.
 
 ## Conclusion:
+This lab successfully combined Python programming, AI-generated code, and real-world USGS water quality data to create an interactive data visualization tool. Through this exercise, it became clear that AI tools can significantly streamline coding tasks, especially for building visualizations and interfaces. However, human oversight remains essential for debugging and contextual understanding.
+
+The final Streamlit app allows users to explore trends in water contaminants over time at selected locations, demonstrating how environmental data can be turned into clear, actionable visuals. This hands-on experience improved both technical coding skills and an understanding of how AI can assist in environmental data analysis.
